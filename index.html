@@ -7,20 +7,44 @@
     <title>Minha página</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="style3.css">
 
 </head>
 
 <body>
     <nav class="navbar">
-        <input id="cep"> </input>
+        <p class="titulo">Consulta CEP</p>
+        <input id="cep" placeholder="Insira o CEP"> </input>
         <button type="button" onclick="consultaCep()">Consultar</button>
     </nav>
-
-    <p id="logradouro"></p>
-    <p id="bairro"></p>
-    <p id="localidade"></p>
-    <p id="uf"></p>
-
+    
+    <div class="container cep">
+        <div class="row">
+            <h3 id="tituloCep">CEP</h3>
+        </div>
+        <div class="row">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Logradouro</td>
+                        <td id="logradouro"></td>
+                    </tr>
+                    <tr>
+                        <td>Bairro</td>
+                        <td id="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td>Localidade</td>
+                        <td id="localidade"></td>
+                    </tr>
+                    <tr>
+                        <td>UF</td>
+                        <td id="uf"></td>
+                    </tr>
+                    </thead>
+            </table>
+        </div>
+    </div>
 
 </body>
 
